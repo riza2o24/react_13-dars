@@ -4,7 +4,7 @@ function Signup() {
   return (
     <div>
       <h3>salom </h3>
-      <Link to={"/login"}>^</Link>
+      <Link to={"/"}>^</Link>
     </div>
   )
 }
