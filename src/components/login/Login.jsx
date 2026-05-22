@@ -1,6 +1,5 @@
 import logo from "../../assets/gugle.png"
 import or from "../../assets/or.png"
-import qwert from "../../assets/qwert.png"
 import Vctor from "../../assets/Vector.png"
 import { Link } from "react-router-dom"
 
@@ -17,13 +16,16 @@ function Login() {
 
           <p className="mb-[10px] text-[16px] font-[500] text-[#110D0A]">Your Email</p>
 
-          <img src={qwert} alt="image" />
+          <div className="w-[370px] h-[50px] p-[15px] border-2 border-[#BA1556] gap-[15px] flex items-center rounded-[60px]">
+            <p className="text-[22px] text-[#BA1556]">@</p>
+            <input type="text" placeholder="stella.hwang@mail.com"  className="w-[100%] dwededfede text-[#BA155680] h-[35px]" />
+          </div>
 
           <p className="mt-[20px] text-[16px] mb-[10px] font-[500] text-[#110D0A]">Your Password</p>
 
           <div className="w-[370px] h-[50px] p-[15px] border-2 border-[#A3A9C6] gap-[15px] flex items-center rounded-[60px]">
             <img src={Vctor} alt="icon" />
-            <input type="text" placeholder="**************" className="w-[100%] dwededfede h-[35px]" />
+            <input type="password" required placeholder="**************" className="w-[100%] dwededfede h-[35px]" />
           </div>
 
           <button className="bg-[#BA1556] text-[14px] mt-[30px] rounded-[60px] px-[166px] py-[11px] font-[600] text-[#FEFEFE]">Login</button>
