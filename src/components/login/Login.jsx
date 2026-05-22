@@ -28,7 +28,7 @@ function Login() {
             <input type="password" required placeholder="**************" className="w-[100%] dwededfede h-[35px]" />
           </div>
 
-          <button className="bg-[#BA1556] text-[14px] mt-[30px] rounded-[60px] px-[166px] py-[11px] font-[600] text-[#FEFEFE]">Login</button>
+          <Link to={"/home"}><button className="bg-[#BA1556] text-[14px] mt-[30px] rounded-[60px] px-[166px] py-[11px] font-[600] text-[#FEFEFE]">Login</button></Link>
 
           <div className="flex items-center mt-[20px] gap-[5px] justify-center">
               <p className=" text-[16px] font-[400] text-[#110D0A]">Don’t have an account?</p>
