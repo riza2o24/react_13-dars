@@ -1,7 +1,11 @@
 
 @import "tailwindcss";
 
-.dwededfede{
-    outline: none;
-    outline: none;
+.card{
+    box-shadow: 0 2px 10px #e6e6e6;
+}
+
+.shatov:hover{
+    background-color: #BA1556;
+    color: #fff;
 }

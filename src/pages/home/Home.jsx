@@ -6,6 +6,7 @@ import globos from "../../assets/globos.png"
 import icon from "../../assets/icon.png"
 import served from "../../assets/served.png"
 import axios from "axios"
+import { Link } from "react-router-dom"
 
 function Home() {
   const [open,setOpen] = useState(false)
@@ -71,8 +72,8 @@ function Home() {
       {/* 2 */}
       <div className="w-[100%]">
 
-        <div className="w-[100%] h-[80px] flex items-center justify-between border-b-2 border-[#F4F4F4] px-[30px] py-[20px]">
-            <div className="w-[337px] h-[40px] flex items-center p-[13px] gap-[12px] rounded-[60px] bg-[#F4F4F4]">
+        <div className="w-[100%] h-[80px] flex items-center gap-[50px] justify-between border-b-2 border-[#F4F4F4] px-[30px] py-[20px]">
+            <div className="w-[100%] h-[40px] flex items-center p-[13px] gap-[12px] rounded-[60px] bg-[#F4F4F4]">
                 <img src={globos} alt="icon" />
 
                 <input type="text" placeholder="Search " className="w-[100%] h-[100%] outline-none" />
@@ -91,14 +92,15 @@ function Home() {
 
         <div className="flex grid grid-cols-6 ml-[30px] gap-[20px] mt-[25px]">
           {todo.map((item) => (
-            <div key={item.idMeal} className="w-[174px] h-[196px] rounded-t-[15px] rounded-b-[15px] border-2 border-[#E7E7E7] ">
+            <div key={item.idMeal} className="w-[174px] h-[200px] card rounded-t-[15px] rounded-b-[15px] border-2 border-[#E7E7E7] ">
               <img src={item.strMealThumb} alt="image" className="w-[100%] h-[97px] bg-[#C4C4C4] rounded-t-[15px]" />
 
               <div className="p-[12px]">
-                  <h3>{item.strMeal}</h3>
-                  <p>{item.strCategory}</p>
-                  <div className="flex items-center ">
-                    <span>{item.strMeasure8}</span>
+                  <h3 className="text-[#110D0A] text-[16px] font-[600]">{item.strMeal.split(" ").slice(0,2).join(" ")}</h3>
+                  <p className="text-[#555555] text-[12px] font-[400] mt-[3px] mb-[3px]">{item.strCategory}</p>
+                  <div className="flex justify-between items-center ">
+                    <span className="text-[#BA1556] text-[14px] font-[600]">{item.strMeasure8.split(" ").slice(0,1)}</span>
+                    <Link to={`/batafsil/${item.idMeal}`}><button className="py-[5px] px-[12px] text-[#BA1556] shatov  text-[12px] font-[500] border-2 border-[#BA1556] rounded-[60px]">Batafsil</button></Link>
                   </div>
               </div>
             </div>
