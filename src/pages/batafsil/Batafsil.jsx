@@ -17,7 +17,7 @@ function Batafsil() {
       const filter =todo.find(s => s.idMeal === params.idMeal)
       
       if(!filter){
-        return <h2>Loding...</h2>
+        return <h2>Loding.....</h2>
       }
   return (
     <div className="flex items-center m-auto justify-center mt-[50px] ">
