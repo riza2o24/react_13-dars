@@ -74,7 +74,7 @@ function Signup() {
                 <p className="text-[14px] font-[500]">I agree to the <span className="text-[#BA1556]">Terms & Conditions</span></p>
               </div>
               
-              <Link to={"/home"}> <button onClick={todoadd} className="bg-[#BA1556] text-[14px] mt-[20px] rounded-[60px] px-[166px] py-[11px] font-[600] text-[#FEFEFE]">Sign up</button></Link>
+              <Link to={"/homee"}> <button onClick={todoadd} className="bg-[#BA1556] text-[14px] mt-[20px] rounded-[60px] px-[166px] py-[11px] font-[600] text-[#FEFEFE]">Sign up</button></Link>
 
               <div className="flex items-center mt-[20px] gap-[5px] justify-center">
                   <p className=" text-[16px] font-[400] text-[#110D0A]">Already have an account?</p>
