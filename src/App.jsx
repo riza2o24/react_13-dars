@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import Login from "./components/login/Login"
 import Signup from "./pages/signup/Signup"
 import Home from "./pages/home/Home"
-import Batafsil from "./pages/batafsil/batafsil"
+import Batafsil from "./pages/batafsil/Batafsil"
 
 function App() {
   return (
