@@ -31,7 +31,7 @@ function Batafsil() {
                   <p className="text-[#555555] text-[19px] font-[400] mt-[3px] mb-[3px]">{filter.strCategory}</p>
                   <div className="flex justify-between ">
                     <span className="text-[#BA1556] text-[18px] font-[600] mt-[15px]">{filter.strMeasure8.split(" ").slice(0,1)}</span>
-                     <Link to={"/home"} className="py-[10px] px-[22px] text-[#BA1556] shatov  text-[18px] font-[600] border-2 border-[#BA1556] rounded-[60px]"><button>orqaga</button></Link>               
+                     <Link to={"/homee"} className="py-[10px] px-[22px] text-[#BA1556] shatov  text-[18px] font-[600] border-2 border-[#BA1556] rounded-[60px]"><button>orqaga</button></Link>               
                   </div>
               </div>
             </div>
